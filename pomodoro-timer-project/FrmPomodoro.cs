@@ -27,8 +27,7 @@ namespace pomodoro_timer_project
         {
 
             TmrMinutes.Start();
-            BtnStart.Hide();
-            BtnStop.Show();
+          
         }
         int minuteCount = 25;
         int secondsCount = 60;
@@ -55,9 +54,13 @@ namespace pomodoro_timer_project
 
         private void BtnStop_Click(object sender, EventArgs e)
         {
-            BtnStop.Hide();
-            BtnStart.Show();
+           
             TmrMinutes.Stop();
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

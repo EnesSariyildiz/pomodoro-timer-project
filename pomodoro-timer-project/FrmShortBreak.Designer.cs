@@ -92,7 +92,7 @@
             this.LblSecond.AutoSize = true;
             this.LblSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblSecond.ForeColor = System.Drawing.Color.White;
-            this.LblSecond.Location = new System.Drawing.Point(628, 338);
+            this.LblSecond.Location = new System.Drawing.Point(623, 313);
             this.LblSecond.Name = "LblSecond";
             this.LblSecond.Size = new System.Drawing.Size(104, 73);
             this.LblSecond.TabIndex = 9;
@@ -103,7 +103,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(604, 333);
+            this.label2.Location = new System.Drawing.Point(599, 313);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 73);
             this.label2.TabIndex = 8;
@@ -114,7 +114,7 @@
             this.LblMinutes.AutoSize = true;
             this.LblMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblMinutes.ForeColor = System.Drawing.Color.White;
-            this.LblMinutes.Location = new System.Drawing.Point(518, 338);
+            this.LblMinutes.Location = new System.Drawing.Point(513, 313);
             this.LblMinutes.Name = "LblMinutes";
             this.LblMinutes.Size = new System.Drawing.Size(104, 73);
             this.LblMinutes.TabIndex = 7;
