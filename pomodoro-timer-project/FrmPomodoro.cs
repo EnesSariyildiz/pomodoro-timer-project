@@ -29,7 +29,7 @@ namespace pomodoro_timer_project
             TmrSeconds.Start();
           
         }
-        int minuteCount = 25;
+        int minuteCount = 2;
         int secondsCount = 60;
         private void TmrMinutes_Tick(object sender, EventArgs e)
         {
@@ -46,13 +46,15 @@ namespace pomodoro_timer_project
                 TmrSeconds.Stop();
                 LblSecond.Text = "00";
                 LblMinutes.Text = "00";
+                fr.Show();
+                this.Hide();
 
             }
 
             //Minutescount--;
             //LblMinutes.Text = Minutescount.ToString();
         }
-
+        FrmShortBreak fr = new FrmShortBreak();
         private void button2_Click(object sender, EventArgs e)
         {
             FrmShortBreak fr = new FrmShortBreak();
@@ -69,6 +71,12 @@ namespace pomodoro_timer_project
         private void BtnClear_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoginImg_Click(object sender, EventArgs e)
+        {
+            FrmLogin fr = new FrmLogin();
+            fr.Show();
         }
     }
 }

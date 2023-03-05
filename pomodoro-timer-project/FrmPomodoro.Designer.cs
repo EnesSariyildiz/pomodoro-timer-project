@@ -39,8 +39,8 @@
             this.BtnShortBreak = new System.Windows.Forms.Button();
             this.BtnLongBreak = new System.Windows.Forms.Button();
             this.BtnStop = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LoginImg = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginImg)).BeginInit();
             this.SuspendLayout();
             // 
             // LblMinutes
@@ -82,7 +82,7 @@
             this.BtnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
             this.BtnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnStart.ForeColor = System.Drawing.Color.Black;
-            this.BtnStart.Location = new System.Drawing.Point(416, 452);
+            this.BtnStart.Location = new System.Drawing.Point(420, 475);
             this.BtnStart.Name = "BtnStart";
             this.BtnStart.Size = new System.Drawing.Size(201, 45);
             this.BtnStart.TabIndex = 7;
@@ -92,7 +92,6 @@
             // 
             // TmrSeconds
             // 
-            this.TmrSeconds.Interval = 1000;
             this.TmrSeconds.Tick += new System.EventHandler(this.TmrMinutes_Tick);
             // 
             // BtnPomodoro
@@ -137,7 +136,7 @@
             this.BtnStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(126)))), ((int)(((byte)(103)))));
             this.BtnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnStop.ForeColor = System.Drawing.Color.Black;
-            this.BtnStop.Location = new System.Drawing.Point(623, 452);
+            this.BtnStop.Location = new System.Drawing.Point(627, 475);
             this.BtnStop.Name = "BtnStop";
             this.BtnStop.Size = new System.Drawing.Size(201, 45);
             this.BtnStop.TabIndex = 3;
@@ -145,15 +144,16 @@
             this.BtnStop.UseVisualStyleBackColor = false;
             this.BtnStop.Click += new System.EventHandler(this.BtnStop_Click);
             // 
-            // pictureBox1
+            // LoginImg
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1195, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.LoginImg.Image = ((System.Drawing.Image)(resources.GetObject("LoginImg.Image")));
+            this.LoginImg.Location = new System.Drawing.Point(1195, 12);
+            this.LoginImg.Name = "LoginImg";
+            this.LoginImg.Size = new System.Drawing.Size(55, 53);
+            this.LoginImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LoginImg.TabIndex = 10;
+            this.LoginImg.TabStop = false;
+            this.LoginImg.Click += new System.EventHandler(this.LoginImg_Click);
             // 
             // FrmPomodoro
             // 
@@ -161,7 +161,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(194)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(1262, 674);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.LoginImg);
             this.Controls.Add(this.BtnStop);
             this.Controls.Add(this.BtnLongBreak);
             this.Controls.Add(this.BtnShortBreak);
@@ -176,7 +176,7 @@
             this.Name = "FrmPomodoro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pomodoro Timer";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,7 +193,7 @@
         private System.Windows.Forms.Button BtnShortBreak;
         private System.Windows.Forms.Button BtnLongBreak;
         private System.Windows.Forms.Button BtnStop;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox LoginImg;
     }
 }
 

@@ -10,3 +10,4 @@ C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-p
 C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro-timer-project.pdb
 C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmShortBreak.resources
 C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmPomodoro.resources
+C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmLogin.resources
