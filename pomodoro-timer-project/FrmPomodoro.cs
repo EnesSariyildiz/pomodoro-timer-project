@@ -26,7 +26,7 @@ namespace pomodoro_timer_project
         private void BtnStart_Click(object sender, EventArgs e)
         {
 
-            TmrMinutes.Start();
+            TmrSeconds.Start();
           
         }
         int minuteCount = 25;
@@ -37,8 +37,16 @@ namespace pomodoro_timer_project
             LblSecond.Text = secondsCount.ToString();
             if (secondsCount==0)
             {
-                
-                
+                minuteCount--;
+                LblMinutes.Text= minuteCount.ToString();
+                secondsCount = 59;
+            }
+            else if (minuteCount==0)
+            {
+                TmrSeconds.Stop();
+                LblSecond.Text = "00";
+                LblMinutes.Text = "00";
+
             }
 
             //Minutescount--;
@@ -55,7 +63,7 @@ namespace pomodoro_timer_project
         private void BtnStop_Click(object sender, EventArgs e)
         {
            
-            TmrMinutes.Stop();
+            TmrSeconds.Stop();
         }
 
         private void BtnClear_Click(object sender, EventArgs e)
