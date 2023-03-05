@@ -29,8 +29,8 @@ namespace pomodoro_timer_project
             TmrSeconds.Start();
           
         }
-        int minuteCount = 2;
-        int secondsCount = 60;
+        int minuteCount = 25, secondsCount = 59;
+      
         private void TmrMinutes_Tick(object sender, EventArgs e)
         {
             secondsCount--;
@@ -50,9 +50,6 @@ namespace pomodoro_timer_project
                 this.Hide();
 
             }
-
-            //Minutescount--;
-            //LblMinutes.Text = Minutescount.ToString();
         }
         FrmShortBreak fr = new FrmShortBreak();
         private void button2_Click(object sender, EventArgs e)
@@ -77,6 +74,11 @@ namespace pomodoro_timer_project
         {
             FrmLogin fr = new FrmLogin();
             fr.Show();
+        }
+
+        private void FrmPomodoro_Load(object sender, EventArgs e)
+        {
+            LblTimeToBreak.Visible = false;
         }
     }
 }

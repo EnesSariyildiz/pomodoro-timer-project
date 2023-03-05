@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmShortBreak));
             this.BtnLongBreak = new System.Windows.Forms.Button();
             this.BtnShortBreak = new System.Windows.Forms.Button();
             this.BtnPomodoro = new System.Windows.Forms.Button();
-            this.LblSecond = new System.Windows.Forms.Label();
+            this.LblSeconds = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LblMinutes = new System.Windows.Forms.Label();
             this.BtnStop = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnStart = new System.Windows.Forms.Button();
+            this.TmrSeconds = new System.Windows.Forms.Timer(this.components);
+            this.LblTimeToFocus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnLongBreak
@@ -76,16 +79,16 @@
             this.BtnPomodoro.UseVisualStyleBackColor = false;
             this.BtnPomodoro.Click += new System.EventHandler(this.button1_Click);
             // 
-            // LblSecond
+            // LblSeconds
             // 
-            this.LblSecond.AutoSize = true;
-            this.LblSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblSecond.ForeColor = System.Drawing.Color.White;
-            this.LblSecond.Location = new System.Drawing.Point(623, 313);
-            this.LblSecond.Name = "LblSecond";
-            this.LblSecond.Size = new System.Drawing.Size(104, 73);
-            this.LblSecond.TabIndex = 9;
-            this.LblSecond.Text = "00";
+            this.LblSeconds.AutoSize = true;
+            this.LblSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblSeconds.ForeColor = System.Drawing.Color.White;
+            this.LblSeconds.Location = new System.Drawing.Point(623, 313);
+            this.LblSeconds.Name = "LblSeconds";
+            this.LblSeconds.Size = new System.Drawing.Size(104, 73);
+            this.LblSeconds.TabIndex = 9;
+            this.LblSeconds.Text = "00";
             // 
             // label2
             // 
@@ -103,7 +106,7 @@
             this.LblMinutes.AutoSize = true;
             this.LblMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblMinutes.ForeColor = System.Drawing.Color.White;
-            this.LblMinutes.Location = new System.Drawing.Point(513, 313);
+            this.LblMinutes.Location = new System.Drawing.Point(549, 313);
             this.LblMinutes.Name = "LblMinutes";
             this.LblMinutes.Size = new System.Drawing.Size(68, 73);
             this.LblMinutes.TabIndex = 7;
@@ -120,18 +123,35 @@
             this.BtnStop.TabIndex = 14;
             this.BtnStop.Text = "Stop";
             this.BtnStop.UseVisualStyleBackColor = false;
+            this.BtnStop.Click += new System.EventHandler(this.BtnStop_Click);
             // 
-            // button1
+            // BtnStart
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(420, 475);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 45);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
+            this.BtnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStart.ForeColor = System.Drawing.Color.Black;
+            this.BtnStart.Location = new System.Drawing.Point(420, 475);
+            this.BtnStart.Name = "BtnStart";
+            this.BtnStart.Size = new System.Drawing.Size(201, 45);
+            this.BtnStart.TabIndex = 15;
+            this.BtnStart.Text = "Start";
+            this.BtnStart.UseVisualStyleBackColor = false;
+            this.BtnStart.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // TmrSeconds
+            // 
+            this.TmrSeconds.Tick += new System.EventHandler(this.TmrSeconds_Tick);
+            // 
+            // LblTimeToFocus
+            // 
+            this.LblTimeToFocus.AutoSize = true;
+            this.LblTimeToFocus.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTimeToFocus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(74)))), ((int)(((byte)(81)))));
+            this.LblTimeToFocus.Location = new System.Drawing.Point(491, 94);
+            this.LblTimeToFocus.Name = "LblTimeToFocus";
+            this.LblTimeToFocus.Size = new System.Drawing.Size(277, 42);
+            this.LblTimeToFocus.TabIndex = 16;
+            this.LblTimeToFocus.Text = "Time To Focus!";
             // 
             // FrmShortBreak
             // 
@@ -139,12 +159,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(111)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1262, 674);
+            this.Controls.Add(this.LblTimeToFocus);
             this.Controls.Add(this.BtnStop);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.BtnLongBreak);
             this.Controls.Add(this.BtnShortBreak);
             this.Controls.Add(this.BtnPomodoro);
-            this.Controls.Add(this.LblSecond);
+            this.Controls.Add(this.LblSeconds);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LblMinutes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -152,6 +173,7 @@
             this.Name = "FrmShortBreak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Short Break";
+            this.Load += new System.EventHandler(this.FrmShortBreak_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,10 +184,12 @@
         private System.Windows.Forms.Button BtnLongBreak;
         private System.Windows.Forms.Button BtnShortBreak;
         private System.Windows.Forms.Button BtnPomodoro;
-        private System.Windows.Forms.Label LblSecond;
+        private System.Windows.Forms.Label LblSeconds;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblMinutes;
         private System.Windows.Forms.Button BtnStop;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnStart;
+        private System.Windows.Forms.Timer TmrSeconds;
+        private System.Windows.Forms.Label LblTimeToFocus;
     }
 }

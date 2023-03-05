@@ -40,6 +40,7 @@
             this.BtnLongBreak = new System.Windows.Forms.Button();
             this.BtnStop = new System.Windows.Forms.Button();
             this.LoginImg = new System.Windows.Forms.PictureBox();
+            this.LblTimeToBreak = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.LoginImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,12 +156,24 @@
             this.LoginImg.TabStop = false;
             this.LoginImg.Click += new System.EventHandler(this.LoginImg_Click);
             // 
+            // LblTimeToBreak
+            // 
+            this.LblTimeToBreak.AutoSize = true;
+            this.LblTimeToBreak.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTimeToBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(74)))), ((int)(((byte)(81)))));
+            this.LblTimeToBreak.Location = new System.Drawing.Point(491, 94);
+            this.LblTimeToBreak.Name = "LblTimeToBreak";
+            this.LblTimeToBreak.Size = new System.Drawing.Size(272, 42);
+            this.LblTimeToBreak.TabIndex = 17;
+            this.LblTimeToBreak.Text = "Time To Break!";
+            // 
             // FrmPomodoro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(194)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(1262, 674);
+            this.Controls.Add(this.LblTimeToBreak);
             this.Controls.Add(this.LoginImg);
             this.Controls.Add(this.BtnStop);
             this.Controls.Add(this.BtnLongBreak);
@@ -176,6 +189,7 @@
             this.Name = "FrmPomodoro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pomodoro Timer";
+            this.Load += new System.EventHandler(this.FrmPomodoro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LoginImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,6 +208,7 @@
         private System.Windows.Forms.Button BtnLongBreak;
         private System.Windows.Forms.Button BtnStop;
         private System.Windows.Forms.PictureBox LoginImg;
+        private System.Windows.Forms.Label LblTimeToBreak;
     }
 }
 
