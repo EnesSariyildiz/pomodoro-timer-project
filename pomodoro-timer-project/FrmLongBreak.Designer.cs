@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLongBreak));
             this.LblTimeToFocus = new System.Windows.Forms.Label();
             this.BtnStop = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             this.LblSeconds = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LblMinutes = new System.Windows.Forms.Label();
+            this.TmrSeconds = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // LblTimeToFocus
@@ -50,6 +52,7 @@
             this.LblTimeToFocus.Size = new System.Drawing.Size(277, 42);
             this.LblTimeToFocus.TabIndex = 25;
             this.LblTimeToFocus.Text = "Time To Focus!";
+            this.LblTimeToFocus.Visible = false;
             // 
             // BtnStop
             // 
@@ -62,6 +65,7 @@
             this.BtnStop.TabIndex = 23;
             this.BtnStop.Text = "Stop";
             this.BtnStop.UseVisualStyleBackColor = false;
+            this.BtnStop.Click += new System.EventHandler(this.BtnStop_Click);
             // 
             // BtnStart
             // 
@@ -74,6 +78,7 @@
             this.BtnStart.TabIndex = 24;
             this.BtnStart.Text = "Start";
             this.BtnStart.UseVisualStyleBackColor = false;
+            this.BtnStart.Click += new System.EventHandler(this.BtnStart_Click);
             // 
             // BtnLongBreak
             // 
@@ -147,6 +152,10 @@
             this.LblMinutes.TabIndex = 17;
             this.LblMinutes.Text = "15";
             // 
+            // TmrSeconds
+            // 
+            this.TmrSeconds.Tick += new System.EventHandler(this.TmrSeconds_Tick);
+            // 
             // FrmLongBreak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,6 +173,7 @@
             this.Controls.Add(this.LblMinutes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmLongBreak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Long Break";
@@ -183,5 +193,6 @@
         private System.Windows.Forms.Label LblSeconds;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblMinutes;
+        private System.Windows.Forms.Timer TmrSeconds;
     }
 }
