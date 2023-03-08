@@ -76,6 +76,13 @@ namespace pomodoro_timer_project
             fr.Show();
         }
 
+        private void BtnLongBreak_Click(object sender, EventArgs e)
+        {
+            FrmLongBreak fr = new FrmLongBreak();
+            fr.Show();
+            this.Hide();
+        }
+
         private void FrmPomodoro_Load(object sender, EventArgs e)
         {
             LblTimeToBreak.Visible = false;

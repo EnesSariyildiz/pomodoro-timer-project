@@ -131,6 +131,7 @@
             this.BtnLongBreak.TabIndex = 6;
             this.BtnLongBreak.Text = "Long Break";
             this.BtnLongBreak.UseVisualStyleBackColor = false;
+            this.BtnLongBreak.Click += new System.EventHandler(this.BtnLongBreak_Click);
             // 
             // BtnStop
             // 

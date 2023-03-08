@@ -52,6 +52,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLongBreak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLongBreak.Designer.cs">
+      <DependentUpon>FrmLongBreak.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPomodoro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLongBreak.resx">
+      <DependentUpon>FrmLongBreak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPomodoro.resx">
       <DependentUpon>FrmPomodoro.cs</DependentUpon>

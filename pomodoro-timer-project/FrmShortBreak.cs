@@ -55,6 +55,14 @@ namespace pomodoro_timer_project
             LblTimeToFocus.Visible= false;
         }
 
+        private void BtnLongBreak_Click(object sender, EventArgs e)
+        {
+
+            FrmLongBreak fr = new FrmLongBreak();
+            fr.Show();
+            this.Hide();
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             TmrSeconds.Start();
