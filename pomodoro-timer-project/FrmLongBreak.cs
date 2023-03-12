@@ -38,8 +38,7 @@ namespace pomodoro_timer_project
             fr.Show();
             this.Hide();
         }
-        int secondsCount=59,minuteCount=15;
-        //İki adet geriye sayılacak olan değişkenleri tanımlıyoruz.
+        
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
@@ -53,6 +52,8 @@ namespace pomodoro_timer_project
             //Timer'ı durduruyor.
         }
 
+        int secondsCount = 59, minuteCount = 2;
+        //İki adet geriye sayılacak olan değişkenleri tanımlıyoruz.
         private void TmrSeconds_Tick(object sender, EventArgs e)
         {
             secondsCount--;
@@ -60,13 +61,19 @@ namespace pomodoro_timer_project
             LblSeconds.Text = secondsCount.ToString();
             //Eksiltilen değer ekranda yazdırılıyor.
             if (secondsCount==0)
-            {
-                
+            {              
                 minuteCount--;
                 //Seconds değişkeni "0" olduğu zaman minute değişkenini bir azaltıyor.
+                LblMinutes.Text = minuteCount.ToString();
                 secondsCount = 59;
                 //Seconds değişkeni"0" olduğu zaman tekrardan 59' değerinden başlatılıyor. 
             }
+            else if (minuteCount==0)
+            {
+                TmrSeconds.Stop();
+                LblSeconds.Text = "00";
+            }
+
 
         }
     }

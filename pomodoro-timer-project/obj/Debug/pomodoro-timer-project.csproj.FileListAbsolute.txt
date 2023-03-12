@@ -12,3 +12,17 @@ C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-p
 C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmPomodoro.resources
 C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmLogin.resources
 C:\Users\ens_s\Desktop\Software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmLongBreak.resources
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\bin\Debug\pomodoro-timer-project.exe.config
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\bin\Debug\pomodoro-timer-project.exe
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\bin\Debug\pomodoro-timer-project.pdb
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro-timer-project.csproj.AssemblyReference.cache
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro-timer-project.csproj.SuggestedBindingRedirects.cache
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmLogin.resources
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmLongBreak.resources
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmPomodoro.resources
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.FrmShortBreak.resources
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro_timer_project.Properties.Resources.resources
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro-timer-project.csproj.GenerateResource.cache
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro-timer-project.csproj.CoreCompileInputs.cache
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro-timer-project.exe
+C:\Users\eness\OneDrive\Masaüstü\desktop\software\projects\pomodoro-timer-project\pomodoro-timer-project\obj\Debug\pomodoro-timer-project.pdb

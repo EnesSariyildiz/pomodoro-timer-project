@@ -16,7 +16,7 @@ namespace pomodoro_timer_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPomodoro());
+            Application.Run(new FrmLongBreak());
         }
     }
 }

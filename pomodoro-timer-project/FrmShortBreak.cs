@@ -25,7 +25,7 @@ namespace pomodoro_timer_project
             this.Hide();
         }
 
-        int minuteCount = 3, secondsCount = 59;
+        int minuteCount = 5, secondsCount = 59;
 
         private void TmrSeconds_Tick(object sender, EventArgs e)
         {
