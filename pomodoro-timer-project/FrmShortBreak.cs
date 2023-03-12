@@ -40,7 +40,8 @@ namespace pomodoro_timer_project
             else if (minuteCount==0)
             {
                 TmrSeconds.Stop();
-                LblTimeToFocus.Visible= true;
+                LblSeconds.Text = "00";
+                
                 
             }
         }
